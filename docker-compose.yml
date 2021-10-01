@@ -1,0 +1,11 @@
+version: '2'
+
+volumes:
+  mnt:
+
+services:
+  external-drive:
+    build: external-drive
+    privileged: true
+    volumes:
+      - mnt:/mnt
